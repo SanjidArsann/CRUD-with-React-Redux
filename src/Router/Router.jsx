@@ -6,6 +6,7 @@ import Home from "../Components/Home/Home";
 import Layout from "../Components/Layout/Layout";
 import ViewStudent from "../features/Student/ViewStudent";
 import AddStudent from "../features/Student/AddStudent";
+import EditStudent from "../features/Student/EditStudent";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
         {
           path: "/add",
           element: <AddStudent/>,
+        },
+        {
+          path: "/edit",
+          element: <EditStudent/>
         },
       ],
   },
